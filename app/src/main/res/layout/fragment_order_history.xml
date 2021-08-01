@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/profile_gradient"
+    tools:context="com.example.activity.fragments.OrderHistoryFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_previous_pet_puja"
+        android:fontFamily="@font/dosis_light"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:id="@+id/txtPetPuja"
+        android:textSize="25sp"
+        android:gravity="center_horizontal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/grey"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/empty_cart"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:id="@+id/animation"
+        android:visibility="gone"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/recyclerOrderHistory"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/allResRelativeLayout"
+        android:background="@color/white">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

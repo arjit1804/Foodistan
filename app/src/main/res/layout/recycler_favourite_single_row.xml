@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView app:cardCornerRadius="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.andmaroid.com/apk/res-auto"
+    android:layout_margin="8dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/llRecyclerFavouriteRow"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:background="@drawable/back"
+        >
+
+        <ImageView
+            android:id="@+id/imgRecyclerFavourite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.8">
+
+            <TextView
+                android:id="@+id/txtRecyclerFavouriteFoodName"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/dosis_light"
+                android:text=""/>
+            <TextView
+                android:id="@+id/rupee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/rupee"
+                android:layout_marginBottom="10dp"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:id="@+id/txtRecyclerFavouriteFoodPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/rupee"
+                android:textSize="20sp"
+                android:fontFamily="@font/dosis_light"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+            <ImageView
+                android:id="@+id/imgRecyclerFavouriteFavFood"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/colour_heart"/>
+            <TextView
+                android:id="@+id/txtRecyclerFavouriteRating"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="4.5"
+                android:fontFamily="@font/dosis_light"
+                android:textStyle="bold"
+                android:layout_marginBottom="18dp"
+                android:textColor="@color/yellow"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

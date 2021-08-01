@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.activity.OkOrderActivity"
+    android:background="@color/black">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/confirmation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:id="@+id/animation"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:textColor="#4648EB"
+        android:textStyle="bold"
+        android:fontFamily="@font/dosis_light"
+        android:text="Your Order Is Successfully Placed"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btnOk"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15sp"
+        android:text="OK"
+        android:textSize="25sp"
+        android:fontFamily="@font/dosis_light"
+        android:backgroundTint="#4648EB"
+        android:textStyle="bold"/>
+</RelativeLayout>
